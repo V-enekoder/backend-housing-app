@@ -15,7 +15,6 @@ type User struct {
 
 type Category struct {
 	gorm.Model
-	UserID uint
 	Name   string  `gorm:"type:varchar(255)"`
 	Models []Model `gorm:"many2many:category_model;"`
 }
